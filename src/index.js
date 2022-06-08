@@ -38,7 +38,6 @@ function onInput(e) {
 function countryListMarkup(r) {
   const markup = r
     .map(({ flags, name }) => {
-      console.log(flags.svg, name.official);
       return `
       <li class="country-item">
         <img class="country-flag" src="${flags.svg}"></img>
@@ -52,13 +51,6 @@ function countryListMarkup(r) {
 function countryInfoMarkup(r) {
   const markup = r
     .map(({ flags, name, population, languages, capital }) => {
-      console.log(
-        flags.svg,
-        name.official,
-        population,
-        Object.values(languages).join(', '),
-        Object.values(capital).join(', ')
-      );
       return `
     <div>
       <img class="country-flag" src="${flags.svg}"></img>
