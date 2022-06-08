@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,4 +19,24 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.container {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+}
+
+.country-flag {
+  width: auto;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.country-name {
+  font-size: 30px;
 }
